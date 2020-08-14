@@ -6,12 +6,17 @@ import * as express from 'express';
 import * as bodyParser from "body-parser";
 
 import * as cors from 'cors'
+// var serviceAccount = require("../constants/servicekey.json");
 
 // // Start writing Firebase Functions
 // // https://firebase.google.com/docs/functions/typescript
 
 //initialization of admin instance
 admin.initializeApp(functions.config().firebase);
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://artbid-d3199.firebaseio.com"
+});
 
 const app = express();
 const main = express();
@@ -21,7 +26,6 @@ main.use(cors({ origin: true }));
 main.use('/api', app);
 main.use(bodyParser.json());
 main.use(bodyParser.urlencoded({ extended: false }));
-
 const db = admin.database()
 
 app.post('/checkLatestBidder', async (req:express.Request, res:express.Response) => {
