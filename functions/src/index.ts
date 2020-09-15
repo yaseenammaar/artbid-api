@@ -16,4 +16,3 @@ main.use('/authApi', appBeforeAuth)
 main.use('/postAuthApi', appAfterAuth)
 
 export const webApi = functions.https.onRequest(main);
-
