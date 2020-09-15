@@ -1,7 +1,6 @@
 import validateFirebaseIdToken from "./validateFirebaseIdToken";
 import {Request, Response} from "express";
 import updateUserData from "./updateUserData";
-
 import * as bodyParser from "body-parser";
 import getFirebaseRecord from "./getFirestoreRecord";
 import checkLatestBidder from "./checkLatestBidder";
