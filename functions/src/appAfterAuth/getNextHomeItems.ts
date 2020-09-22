@@ -18,14 +18,21 @@ interface mResponse {
 const getNextHomeItems = async (req : customRequest, res : Response) => {
     try {
 
-        const { limit = 10} = req.body
-        const startingDoc = req.body['startingDoc']
+        const { limit = 10, startingDoc = null } = req.body
 
         const itemsCollectionRef: admin.firestore.CollectionReference = db.collection("items");
-        const itemsQuery: admin.firestore.Query =
-            itemsCollectionRef.orderBy("creation_timestamp", 'desc')
-                .startAt(startingDoc)
-                .limit(limit);
+
+        let itemsQuery: admin.firestore.Query
+        if(startingDoc == null) {
+            itemsQuery = itemsCollectionRef.orderBy("creation_timestamp", 'desc').limit(limit);
+        }
+        else {
+            itemsQuery =
+                itemsCollectionRef.orderBy("creation_timestamp", 'desc')
+                    .startAt(startingDoc)
+                    .limit(limit);
+        }
+
 
         const snapshots = await itemsQuery.get()
 
