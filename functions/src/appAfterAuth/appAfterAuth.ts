@@ -4,7 +4,7 @@ import updateUserData from "./updateUserData";
 import * as bodyParser from "body-parser";
 import getFirebaseRecord from "./getFirestoreRecord";
 import checkLatestBidder from "./checkLatestBidder";
-import getItems from "./getItems";
+import getNextHomeItems from "./getNextHomeItems";
 import saveNewUserInDb from "./saveNewUserInDb";
 
 const express = require('express')
@@ -37,7 +37,7 @@ appAfterAuth.post("/updateUserData", jsonParser, updateUserData)
 
 //api to save new user in firestore after successful login
 // json Parser is needed
-appAfterAuth.post("/getItems", jsonParser, getItems)
+appAfterAuth.post("/getNextHomeItems", jsonParser, getNextHomeItems)
 
 //api to update session doc
 //json Parser is needed

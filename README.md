@@ -14,7 +14,7 @@ Two apis are there:
             "uid": "dsfhkjsdhfk"        
         }
 
-`2.)` https://us-central1-artbid-d3199.cloudfunctions.net/webApi/api/getItems
+`2.)` https://us-central1-artbid-d3199.cloudfunctions.net/webApi/api/getNextHomeItems
         
         This is get request;
         
