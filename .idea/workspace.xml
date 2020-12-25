@@ -2,45 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c751948-b1d8-4324-9994-fd4491f5a41d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/functions/src/Logics/updateFirestore.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/firebaseAdmin.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/protectedApp/checkLatestBidder.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/protectedApp/getFirestoreRecord.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/protectedApp/getNextHomeItems.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/protectedApp/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/protectedApp/saveNewUserInDb.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/protectedApp/updateUserData.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/protectedApp/validateFirebaseIdToken.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/unprotectedApp/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artbid-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artbid-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logics/updateFirestore.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appAfterAuth/appAfterAuth.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appAfterAuth/checkLatestBidder.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appAfterAuth/getFirestoreRecord.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appAfterAuth/getNextHomeItems.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appAfterAuth/saveNewUserInDb.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appAfterAuth/updateUserData.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appAfterAuth/validateFirebaseIdToken.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appBeforeAuth/appBeforeAuth.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firebaseAdmin.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/handler.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/serverless.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/src/protectedApp/itemUpload.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/getNextHomeItems.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/protectedApp/getNextHomeItems.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -74,7 +50,7 @@
       <updated>1607003697344</updated>
       <workItem from="1607003698807" duration="1535000" />
       <workItem from="1607171642975" duration="117000" />
-      <workItem from="1608904725124" duration="2477000" />
+      <workItem from="1608904725124" duration="5348000" />
     </task>
     <servers />
   </component>

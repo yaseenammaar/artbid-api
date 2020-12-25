@@ -1,6 +1,6 @@
 import {Request, Response} from "express";
 import admin from "../firebaseAdmin"
-
+import * as fireAdmin from "firebase-admin"
 
 const db = admin.firestore()
 
@@ -20,9 +20,9 @@ const getNextHomeItems = async (req : customRequest, res : Response) => {
 
         const { limit = 10, startingDoc = null } = req.body
 
-        const itemsCollectionRef: admin.firestore.CollectionReference = db.collection("items");
+        const itemsCollectionRef: fireAdmin.firestore.CollectionReference = db.collection("items");
 
-        let itemsQuery: admin.firestore.Query
+        let itemsQuery: fireAdmin.firestore.Query
         if(startingDoc == null) {
             itemsQuery = itemsCollectionRef.orderBy("creation_timestamp", 'desc').limit(limit);
         }

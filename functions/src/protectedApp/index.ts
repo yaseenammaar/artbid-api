@@ -6,6 +6,7 @@ import getFirebaseRecord from "./getFirestoreRecord";
 import checkLatestBidder from "./checkLatestBidder";
 import getNextHomeItems from "./getNextHomeItems";
 import saveNewUserInDb from "./saveNewUserInDb";
+import itemUpload from "./itemUpload";
 
 const express = require('express')
 
@@ -50,5 +51,9 @@ protectedApp.post("/getFirestoreDocument", jsonParser, getFirebaseRecord)
 //api to save new user in firestore after successful login
 // json Parser is needed
 protectedApp.post("/saveNewUserInDb", jsonParser, saveNewUserInDb)
+
+//api to upload new item
+// json Parser is needed
+protectedApp.post("/itemUpload", jsonParser, itemUpload)
 
 export default protectedApp
