@@ -15,20 +15,20 @@ interface mResponse {
     items: any
 }
 
-const getNextHomeItems = async (req : customRequest, res : Response) => {
+const searchItems = async (req : customRequest, res : Response) => {
     try {
 
-        const { limit = 10, startingDoc = null } = req.body
+        const { limit = 10, startingDoc = null, searchTerms } = req.body
 
         const itemsCollectionRef: fireAdmin.firestore.CollectionReference = db.collection("items");
 
         let itemsQuery: fireAdmin.firestore.Query
         if(startingDoc == null) {
-            itemsQuery = itemsCollectionRef.orderBy("creation_timestamp", 'desc').limit(limit);
+            itemsQuery = itemsCollectionRef.where('search_tags', "array-contains-any", searchTerms).orderBy("upload_timestamp", 'desc').limit(limit);
         }
         else {
             itemsQuery =
-                itemsCollectionRef.orderBy("creation_timestamp", 'desc')
+                itemsCollectionRef.where('search_tags', "array-contains-any", searchTerms).orderBy("upload_timestamp", 'desc')
                     .startAt(startingDoc)
                     .limit(limit);
         }
@@ -57,5 +57,5 @@ const getNextHomeItems = async (req : customRequest, res : Response) => {
     }
 }
 
-export default getNextHomeItems
+export default searchItems
 

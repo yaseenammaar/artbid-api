@@ -4,7 +4,7 @@ import updateUserData from "./updateUserData";
 import * as bodyParser from "body-parser";
 import getFirebaseRecord from "./getFirestoreRecord";
 import checkLatestBidder from "./checkLatestBidder";
-import getNextHomeItems from "./getNextHomeItems";
+import searchItems from "./searchItems";
 import saveNewUserInDb from "./saveNewUserInDb";
 import itemUpload from "./itemUpload";
 
@@ -38,7 +38,7 @@ protectedApp.post("/updateUserData", jsonParser, updateUserData)
 
 //api to save new user in firestore after successful login
 // json Parser is needed
-protectedApp.post("/getNextHomeItems", jsonParser, getNextHomeItems)
+protectedApp.post("/searchItems", jsonParser, searchItems)
 
 //api to update session doc
 //json Parser is needed

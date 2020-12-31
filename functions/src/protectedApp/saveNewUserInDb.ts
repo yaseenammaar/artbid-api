@@ -1,7 +1,6 @@
 import {Request, Response} from "express";
 import admin from "../firebaseAdmin"
 
-const auth = admin.auth()
 const db = admin.firestore()
 
 interface customRequest extends Request {
@@ -17,20 +16,9 @@ interface mResponse {
 
 function createUserInDb(userRecord:any, uid:string) {
     return new Promise((resolve, reject) => {
-        const docDetails = {
-            uid:userRecord.uid === undefined? null: userRecord.uid,
-            phoneNumber:userRecord.phoneNumber === undefined? null: userRecord.phoneNumber,
-            email: userRecord.email === undefined? null: userRecord.email,
-            lastSignInTime:userRecord.lastSignInTime === undefined? null: userRecord.lastSignInTime,
-            photoUrl:userRecord.photoURL === undefined? null: userRecord.photoURL,
-            displayName:userRecord.displayName === undefined? null: userRecord.displayName,
-            isEmailVerified:userRecord.isEmailVerified === undefined? null: userRecord.isEmailVerified,
-            creationTime:userRecord.creationTime === undefined? null: userRecord.creationTime
-
-        }
 
         const usersDoc = db.doc("users/" + uid)
-        usersDoc.set(docDetails, { merge: true })
+        usersDoc.set(userRecord, { merge: true })
             .then(function (result) {
                 //result.writeTime
                 resolve(result)
@@ -44,9 +32,26 @@ function createUserInDb(userRecord:any, uid:string) {
 const saveNewUserInDb = async (req : customRequest, res : Response) => {
     try {
         const uid = req.user['uid']
-        const userRecord = await auth.getUser(uid)
 
-        const writeRes:any = await createUserInDb(userRecord.toJSON(), uid)
+        const {
+            bio,
+            creation_date,
+            email,
+            last_signin,
+            phone_no,
+            profile_pic = "https://image.flaticon.com/icons/svg/2893/2893152.svg",
+            username
+        } = req.body
+
+        const writeRes:any = await createUserInDb({
+            bio,
+            creation_date,
+            email,
+            last_signin,
+            phone_no,
+            profile_pic,
+            username
+        }, uid)
 
         const response:mResponse = {
             writeTime: writeRes.writeTime,

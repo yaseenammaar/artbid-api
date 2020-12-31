@@ -19,35 +19,35 @@ const itemUpload = async (req : customRequest, res : Response) => {
     try {
 
         const {
-            availableState = 'All',
-            basePrice,
-            byUser,
+            available_state = 'All',
+            base_price,
+            by_user,
             caption,
             category,
-            closingDate,
-            closingTime,
+            closing_date,
+            closing_time,
             state,
             status,
             title,
-            featuredImage,
-            supportingImages
+            featured_image,
+            supporting_images
         } = req.body
 
         const itemCollection = db.collection('items')
 
         const itemRes = await itemCollection.add({
-            availableState,
-            basePrice,
-            byUser,
+            available_state,
+            base_price,
+            by_user,
             caption,
             category,
-            closingDate,
-            closingTime,
+            closing_date,
+            closing_time,
             state,
             status,
             title,
-            featuredImage,
-            supportingImages
+            featured_image,
+            supporting_images
         })
 
         const response: mResponse = {
