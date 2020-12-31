@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1c751948-b1d8-4324-9994-fd4491f5a41d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/getNextHomeItems.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/protectedApp/searchItems.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/protectedApp/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/itemUpload.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/protectedApp/itemUpload.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/saveNewUserInDb.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/protectedApp/saveNewUserInDb.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/searchItems.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/protectedApp/searchItems.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +60,8 @@
       <workItem from="1609410747568" duration="20000" />
       <workItem from="1609410806937" duration="387000" />
       <workItem from="1609411258708" duration="39000" />
-      <workItem from="1609427401313" duration="2898000" />
+      <workItem from="1609427401313" duration="3317000" />
+      <workItem from="1609430877355" duration="337000" />
     </task>
     <servers />
   </component>

@@ -18,7 +18,10 @@ interface mResponse {
 const searchItems = async (req : customRequest, res : Response) => {
     try {
 
-        const { limit = 10, startingDoc = null, searchTerms } = req.body
+        const { limit = 10, startingDoc = null, searchText } = req.body
+
+        const splittedSearchText = searchText.split(" ")
+        const searchTerms = [searchText, ...splittedSearchText]
 
         const itemsCollectionRef: fireAdmin.firestore.CollectionReference = db.collection("items");
 
