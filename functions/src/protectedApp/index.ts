@@ -7,6 +7,7 @@ import checkLatestBidder from "./checkLatestBidder";
 import searchItems from "./searchItems";
 import saveNewUserInDb from "./saveNewUserInDb";
 import itemUpload from "./itemUpload";
+import toggleFollowUnfollow from "./toggleFollowUnfollow";
 
 const express = require('express')
 
@@ -36,7 +37,7 @@ protectedApp.get("/checkPostAuth", async(req : Request, res : Response) => {
 // json Parser is needed
 protectedApp.post("/updateUserData", jsonParser, updateUserData)
 
-//api to save new user in firestore after successful login
+//api to search items
 // json Parser is needed
 protectedApp.post("/searchItems", jsonParser, searchItems)
 
@@ -55,5 +56,9 @@ protectedApp.post("/saveNewUserInDb", jsonParser, saveNewUserInDb)
 //api to upload new item
 // json Parser is needed
 protectedApp.post("/itemUpload", jsonParser, itemUpload)
+
+//api to toggle follow unfollow status
+// json Parser is needed
+protectedApp.post("/toggleFollowUnfollow", jsonParser, toggleFollowUnfollow)
 
 export default protectedApp

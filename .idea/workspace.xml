@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c751948-b1d8-4324-9994-fd4491f5a41d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation/coding_rules_and_styles.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation/protected_app_apis.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation/unprotected_app_apis.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/src/protectedApp/toggleFollowUnfollow.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +64,10 @@
       <workItem from="1609430877355" duration="415000" />
       <workItem from="1609681485749" duration="8000" />
       <workItem from="1610182040856" duration="220000" />
-      <workItem from="1610182278219" duration="2587000" />
+      <workItem from="1610182278219" duration="3084000" />
+      <workItem from="1610199273602" duration="6000" />
+      <workItem from="1610378164283" duration="64000" />
+      <workItem from="1610378942445" duration="3382000" />
     </task>
     <servers />
   </component>
