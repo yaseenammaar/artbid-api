@@ -1,4 +1,4 @@
-##Protected Apis
+## Protected Apis
 
 -------------------------
 
@@ -7,3 +7,4 @@
 - [searchItems](../functions/src/protectedApp/searchItems.ts)
 - [updateUserData](../functions/src/protectedApp/updateUserData.ts)
 - [getFirestoreRecord](../functions/src/protectedApp/getFirestoreRecord.ts)
+- [toggleFollowUnfollow](../functions/src/protectedApp/toggleFollowUnfollow.ts)
