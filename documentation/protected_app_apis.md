@@ -8,3 +8,4 @@
 - [updateUserData](../functions/src/protectedApp/updateUserData.ts)
 - [getFirestoreRecord](../functions/src/protectedApp/getFirestoreRecord.ts)
 - [toggleFollowUnfollow](../functions/src/protectedApp/toggleFollowUnfollow.ts)
+- [saveItemForUser](../functions/src/protectedApp/saveItemForUser.ts)
