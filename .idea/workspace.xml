@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c751948-b1d8-4324-9994-fd4491f5a41d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/functions/src/protectedApp/saveItemForUser.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.firebaserc" beforeDir="false" afterPath="$PROJECT_DIR$/.firebaserc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firebase.json" beforeDir="false" afterPath="$PROJECT_DIR$/firebase.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/firebaseAdmin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/firebaseAdmin.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/getFirestoreRecord.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/protectedApp/getFirestoreRecord.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/itemUpload.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/protectedApp/itemUpload.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/saveItemForUser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/protectedApp/saveItemForUser.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/saveNewUserInDb.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/protectedApp/saveNewUserInDb.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/searchItems.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/protectedApp/searchItems.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/toggleFollowUnfollow.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/protectedApp/toggleFollowUnfollow.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/updateUserData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/protectedApp/updateUserData.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,11 +31,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1l9K78qaJBaccmpj9SzlS8UbUbA" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -69,7 +82,7 @@
       <workItem from="1610199273602" duration="6000" />
       <workItem from="1610378164283" duration="64000" />
       <workItem from="1610378942445" duration="4188000" />
-      <workItem from="1610456001557" duration="1561000" />
+      <workItem from="1610456001557" duration="5050000" />
     </task>
     <servers />
   </component>
@@ -87,5 +100,8 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

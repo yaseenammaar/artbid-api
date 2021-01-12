@@ -40,7 +40,7 @@ const saveNewUserInDb = async (req : customRequest, res : Response) => {
             last_signin,
             phone_no,
             profile_pic = "https://image.flaticon.com/icons/svg/2893/2893152.svg",
-            username
+            username,
         } = req.body
 
         const writeRes:any = await createUserInDb({
@@ -50,14 +50,14 @@ const saveNewUserInDb = async (req : customRequest, res : Response) => {
             last_signin,
             phone_no,
             profile_pic,
-            username
+            username,
         }, uid)
 
         const response:mResponse = {
             writeTime: writeRes.writeTime,
             isError:false,
             error:null,
-            statusCode:200
+            statusCode:200,
         }
 
         res.send(response)
@@ -67,7 +67,7 @@ const saveNewUserInDb = async (req : customRequest, res : Response) => {
             writeTime: null,
             isError:true,
             error:error,
-            statusCode:400
+            statusCode:400,
         }
 
         res.send(response)

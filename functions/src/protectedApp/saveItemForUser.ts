@@ -23,12 +23,12 @@ const saveItemForUser = async (req : customRequest, res : Response) => {
         const savedItemsCollectionRef: firebase.firestore.CollectionReference = db.collection("users/" + uid + "/saved_items")
 
         const {
-            item_id
+            item_id,
         } = req.body
 
         const data = {
             saving_date: firebase.firestore.Timestamp.now(),
-            item_id
+            item_id,
         }
 
         const Res = await savedItemsCollectionRef.doc(item_id).set(data)
@@ -47,7 +47,7 @@ const saveItemForUser = async (req : customRequest, res : Response) => {
             statusCode: 400,
             isError: true,
             error: error,
-            writeRes: null
+            writeRes: null,
         }
 
         res.send(response)

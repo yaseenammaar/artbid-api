@@ -39,7 +39,7 @@ const updateUserData = async (req : Request, res : Response) => {
             isUpdated: true,
             isError:false,
             error: '',
-            statusCode:200
+            statusCode:200,
         }
 
         res.send(response)
@@ -51,13 +51,13 @@ const updateUserData = async (req : Request, res : Response) => {
                 displayName: name,
                 email: email,
                 phoneNumber: ph_no,
-                photoUrl: photo_url
+                photoUrl: photo_url,
             },
             isUpdated: false,
             isError:true,
             error: error,
             writeTime:null,
-            statusCode:400
+            statusCode:400,
         }
 
         res.send(response)

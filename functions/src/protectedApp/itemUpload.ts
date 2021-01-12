@@ -30,7 +30,7 @@ const itemUpload = async (req : customRequest, res : Response) => {
             status,
             title,
             featured_image,
-            supporting_images
+            supporting_images,
         } = req.body
 
         const itemCollection = db.collection('items')
@@ -47,14 +47,14 @@ const itemUpload = async (req : customRequest, res : Response) => {
             status,
             title,
             featured_image,
-            supporting_images
+            supporting_images,
         })
 
         const response: mResponse = {
             statusCode: 200,
             isError: false,
             error: null,
-            itemRes
+            itemRes,
         }
 
         res.send(response)
@@ -64,7 +64,7 @@ const itemUpload = async (req : customRequest, res : Response) => {
             statusCode: 400,
             isError: true,
             error: error,
-            itemRes: null
+            itemRes: null,
         }
 
         res.send(response)

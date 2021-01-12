@@ -24,7 +24,7 @@ const toggleFollowUnfollow = async (req : customRequest, res : Response) => {
         const followingCollectionRef: firebase.firestore.CollectionReference = db.collection("users/" + uid + "/following")
 
         const {
-            other_user_id
+            other_user_id,
         } = req.body
 
         const requiredFollowerDoc: firebase.firestore.DocumentSnapshot = await followingCollectionRef.doc(other_user_id).get()
@@ -35,7 +35,7 @@ const toggleFollowUnfollow = async (req : customRequest, res : Response) => {
             // follow him or her
             const data = {
                 follow_date: firebase.firestore.Timestamp.now(),
-                following_id: other_user_id
+                following_id: other_user_id,
             }
 
             Res = await followingCollectionRef.doc(other_user_id).set(data)
@@ -54,7 +54,7 @@ const toggleFollowUnfollow = async (req : customRequest, res : Response) => {
             isError:false,
             error:null,
             statusCode:200,
-            toggleAction: toggleAction
+            toggleAction: toggleAction,
         }
 
         res.send(response)
@@ -65,7 +65,7 @@ const toggleFollowUnfollow = async (req : customRequest, res : Response) => {
             isError:true,
             error:error,
             statusCode:400,
-            toggleAction: null
+            toggleAction: null,
         }
 
         res.send(response)

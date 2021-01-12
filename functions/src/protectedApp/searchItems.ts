@@ -43,7 +43,7 @@ const searchItems = async (req : customRequest, res : Response) => {
             statusCode: 200,
             isError: false,
             error: null,
-            items: snapshots
+            items: snapshots,
         }
 
         res.send(response)
@@ -53,7 +53,7 @@ const searchItems = async (req : customRequest, res : Response) => {
             statusCode: 400,
             isError: true,
             error: error,
-            items: null
+            items: null,
         }
 
         res.send(response)

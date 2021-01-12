@@ -26,11 +26,10 @@ const getFirebaseRecord = async (req : customRequest, res : Response) => {
 
         if(doc.exists) {
             response = {
-
                 docRecord: doc,
                 isError:false,
                 error: '',
-                statusCode:200
+                statusCode:200,
             }
         }
         else {
@@ -39,7 +38,7 @@ const getFirebaseRecord = async (req : customRequest, res : Response) => {
                 docRecord: {},
                 isError:true,
                 error: 'doc does not exist',
-                statusCode:200
+                statusCode:200,
             }
         }
 
@@ -52,7 +51,7 @@ const getFirebaseRecord = async (req : customRequest, res : Response) => {
             docRecord: {},
             isError:true,
             error: error,
-            statusCode:400
+            statusCode:400,
         }
 
         res.send(response)
