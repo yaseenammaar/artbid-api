@@ -3,7 +3,6 @@ import {Request, Response} from "express";
 import updateUserData from "./updateUserData";
 import * as bodyParser from "body-parser";
 import getFirebaseRecord from "./getFirestoreRecord";
-import checkLatestBidder from "./checkLatestBidder";
 import searchItems from "./searchItems";
 import saveNewUserInDb from "./saveNewUserInDb";
 import itemUpload from "./itemUpload";
@@ -41,10 +40,6 @@ protectedApp.post("/updateUserData", jsonParser, updateUserData)
 //api to search items
 // json Parser is needed
 protectedApp.post("/searchItems", jsonParser, searchItems)
-
-//api to update session doc
-//json Parser is needed
-protectedApp.post("/checkLatestBidder", jsonParser, checkLatestBidder)
 
 //api to any any document from firestore
 //json Parser is needed

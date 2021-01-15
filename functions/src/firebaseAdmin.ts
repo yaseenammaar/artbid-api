@@ -1,5 +1,5 @@
 import * as admin from "firebase-admin"
 
-const appAdmin = admin.initializeApp();
+admin.initializeApp();
 
-export default appAdmin
+export default admin;

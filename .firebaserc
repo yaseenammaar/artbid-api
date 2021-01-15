@@ -1,6 +1,6 @@
 {
   "projects": {
-    "prod": "artbid-d3199",
-    "dev": "artbidwebdev"
+    "prod": "artbid-database",
+    "dev": "artbid-db-dev"
   }
 }
