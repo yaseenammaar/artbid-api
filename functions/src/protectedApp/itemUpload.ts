@@ -33,6 +33,17 @@ const itemUpload = async (req : customRequest, res : Response) => {
             supporting_images,
         } = req.body
 
+        const search_tags = [title, state, category, caption]
+        let search_permutations = []
+
+        // take each tag and fill search_permutations with each possibility of search
+        for (let i = 0; i < search_tags.length; i ++) {
+            const tag: string = search_tags[i];
+            for(let j = 1; j <= search_tags.length; j++) {
+                search_permutations.push(tag.substr(0, j));
+            }
+        }
+
         const itemCollection = db.collection('items')
 
         const itemRes = await itemCollection.add({
@@ -48,6 +59,8 @@ const itemUpload = async (req : customRequest, res : Response) => {
             title,
             featured_image,
             supporting_images,
+            search_tags,
+            search_permutations,
         })
 
         const response: mResponse = {

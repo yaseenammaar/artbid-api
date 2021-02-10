@@ -27,11 +27,11 @@ const searchItems = async (req : customRequest, res : Response) => {
 
         let itemsQuery: fireAdmin.firestore.Query
         if(startingDoc == null) {
-            itemsQuery = itemsCollectionRef.where('search_tags', "array-contains-any", searchTerms).orderBy("upload_timestamp", 'desc').limit(limit);
+            itemsQuery = itemsCollectionRef.where('search_permutations', "array-contains-any", searchTerms).orderBy("upload_timestamp", 'desc').limit(limit);
         }
         else {
             itemsQuery =
-                itemsCollectionRef.where('search_tags', "array-contains-any", searchTerms).orderBy("upload_timestamp", 'desc')
+                itemsCollectionRef.where('search_permutations', "array-contains-any", searchTerms).orderBy("upload_timestamp", 'desc')
                     .startAt(startingDoc)
                     .limit(limit);
         }

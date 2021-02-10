@@ -31,26 +31,24 @@ function createUserInDb(userRecord:any, uid:string) {
 
 const saveNewUserInDb = async (req : customRequest, res : Response) => {
     try {
-        const uid = req.user['uid']
+        const user = req.user
+        const uid = user.uid
 
         const {
             bio,
-            creation_date,
-            email,
-            last_signin,
-            phone_no,
-            profile_pic = "https://image.flaticon.com/icons/svg/2893/2893152.svg",
-            username,
+            city,
         } = req.body
 
         const writeRes:any = await createUserInDb({
+            uid,
             bio,
-            creation_date,
-            email,
-            last_signin,
-            phone_no,
-            profile_pic,
-            username,
+            creation_date: user.metadata.creationTime === undefined ? null : user.metadata.creationTime,
+            email: user.email === undefined ? null : user.email,
+            last_signin: user.metadata.lastSignInTime === undefined ? null : user.metadata.lastSignInTime,
+            phone_no: user.phoneNumber === undefined ? null : user.phoneNumber,
+            profile_pic: user.photoURL === undefined? "https://image.flaticon.com/icons/svg/2893/2893152.svg" : user.photoURL,
+            username: user.displayName === undefined ? null : user.displayName,
+            city,
         }, uid)
 
         const response:mResponse = {
