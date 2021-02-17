@@ -8,6 +8,7 @@ import saveNewUserInDb from "./saveNewUserInDb";
 import itemUpload from "./itemUpload";
 import toggleFollowUnfollow from "./toggleFollowUnfollow";
 import saveItemForUser from "./saveItemForUser";
+import getItems from "./getItems";
 
 const express = require('express')
 
@@ -60,5 +61,9 @@ protectedApp.post("/toggleFollowUnfollow", jsonParser, toggleFollowUnfollow)
 //api to save item for a authenticated user
 // json Parser is needed
 protectedApp.post("/saveItemForUser", jsonParser, saveItemForUser)
+
+//api to get items from db
+// json Parser is needed
+protectedApp.post("/getItems", jsonParser, getItems)
 
 export default protectedApp
