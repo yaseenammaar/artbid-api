@@ -1,5 +1,6 @@
 import {Request, Response} from "express";
 import admin from "../firebaseAdmin"
+import * as functions from 'firebase-functions';
 
 const db = admin.firestore()
 
@@ -30,14 +31,18 @@ function createUserInDb(userRecord:any, uid:string) {
 }
 
 const saveNewUserInDb = async (req : customRequest, res : Response) => {
+    let response: mResponse;
     try {
-        const user = req.user
-        const uid = user.uid
+
+        const uid = req.user.uid
+        functions.logger.log(req.body)
 
         const {
             bio,
             city,
         } = req.body
+
+        const user = await admin.auth().getUser(uid)
 
         const writeRes:any = await createUserInDb({
             uid,
@@ -51,25 +56,26 @@ const saveNewUserInDb = async (req : customRequest, res : Response) => {
             city,
         }, uid)
 
-        const response:mResponse = {
+        response= {
             writeTime: writeRes.writeTime,
             isError:false,
             error:null,
             statusCode:200,
         }
 
-        res.send(response)
+
 
     } catch (error) {
-        const response:mResponse = {
+        functions.logger.error(error.name, error.message)
+        response = {
             writeTime: null,
             isError:true,
-            error:error,
+            error:error.message,
             statusCode:400,
         }
 
-        res.send(response)
     }
+    res.send(response)
 }
 
 export default saveNewUserInDb

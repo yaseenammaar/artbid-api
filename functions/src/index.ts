@@ -1,8 +1,7 @@
 import * as functions from 'firebase-functions';
-
-import * as cors from "cors"
-const express = require('express')
-import * as cookieParser from "cookie-parser"
+import * as express from "express";
+import * as cors from "cors";
+//import * as cookieParser from "cookie-parser"
 
 import protectedApp from "./protectedApp";
 import unprotectedApp from "./unprotectedApp";
@@ -17,12 +16,21 @@ import unprotectedApp from "./unprotectedApp";
 
 // Express instances
 const main = express();
+const corsHandler = cors({origin: true})
 
-main.use(cors({origin:true}))
-
-main.use(cookieParser)
+main.use('*', corsHandler)
+// @ts-ignore
+//main.use(cookieParser)
 
 main.use('/unprotectedApi', unprotectedApp)
 main.use('/protectedApi', protectedApp)
 
 export const webApi = functions.https.onRequest(main);
+
+
+export const testApi = functions.https.onRequest((request, response) => {
+    corsHandler(request, response, () => {
+        functions.logger.info("Hello logs!", {structuredData: true});
+        response.send("Hello from Firebase!");
+    })
+});

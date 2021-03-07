@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c751948-b1d8-4324-9994-fd4491f5a41d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/functions/src/protectedApp/getItems.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/protected_app_apis.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/protected_app_apis.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firebase.json" beforeDir="false" afterPath="$PROJECT_DIR$/firebase.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/protectedApp/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/saveNewUserInDb.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/protectedApp/saveNewUserInDb.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/validateFirebaseIdToken.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/protectedApp/validateFirebaseIdToken.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/unprotectedApp/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/unprotectedApp/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +41,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../artbid-reactjs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Users\prosh\WebstormProjects\artbid-api\functions\node_modules\typescript\lib" />
@@ -84,7 +96,11 @@
       <workItem from="1612680034300" duration="502000" />
       <workItem from="1612944856490" duration="596000" />
       <workItem from="1612951053206" duration="4897000" />
-      <workItem from="1613538983499" duration="4198000" />
+      <workItem from="1613538983499" duration="4830000" />
+      <workItem from="1613659774104" duration="186000" />
+      <workItem from="1614931092466" duration="2279000" />
+      <workItem from="1615012938062" duration="6010000" />
+      <workItem from="1615097519520" duration="7363000" />
     </task>
     <servers />
   </component>
