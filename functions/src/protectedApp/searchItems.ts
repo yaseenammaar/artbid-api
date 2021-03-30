@@ -18,20 +18,17 @@ interface mResponse {
 const searchItems = async (req : customRequest, res : Response) => {
     try {
 
-        const { limit = 10, startingDoc = null, searchText } = req.body
-
-        const splittedSearchText = searchText.split(" ")
-        const searchTerms = [searchText, ...splittedSearchText]
+        const { limit = 10, startingDoc = null, searchTag } = req.body
 
         const itemsCollectionRef: fireAdmin.firestore.CollectionReference = db.collection("items");
 
         let itemsQuery: fireAdmin.firestore.Query
         if(startingDoc == null) {
-            itemsQuery = itemsCollectionRef.where('search_permutations', "array-contains-any", searchTerms).orderBy("upload_timestamp", 'desc').limit(limit);
+            itemsQuery = itemsCollectionRef.where('search_tags', "array-contains", searchTag).orderBy("upload_timestamp", 'desc').limit(limit);
         }
         else {
             itemsQuery =
-                itemsCollectionRef.where('search_permutations', "array-contains-any", searchTerms).orderBy("upload_timestamp", 'desc')
+                itemsCollectionRef.where('search_tags', "array-contains", searchTag).orderBy("upload_timestamp", 'desc')
                     .startAt(startingDoc)
                     .limit(limit);
         }

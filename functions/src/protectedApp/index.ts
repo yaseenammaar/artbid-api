@@ -9,6 +9,7 @@ import itemUpload from "./itemUpload";
 import toggleFollowUnfollow from "./toggleFollowUnfollow";
 import saveItemForUser from "./saveItemForUser";
 import getItems from "./getItems";
+import getSearchSuggestions from "./getSearchSuggestions";
 
 // express instance of after auth middleware
 const protectedApp = express.Router()
@@ -71,5 +72,10 @@ protectedApp.post("/saveItemForUser", jsonParser, saveItemForUser)
 // json Parser is needed
 // @ts-ignore
 protectedApp.post("/getItems", jsonParser, getItems)
+
+//api to get items from db
+// json Parser is needed
+// @ts-ignore
+protectedApp.post("/getSearchSuggestions", jsonParser, getSearchSuggestions)
 
 export default protectedApp

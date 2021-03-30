@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c751948-b1d8-4324-9994-fd4491f5a41d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/functions/src/protectedApp/getSearchSuggestions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firebase.json" beforeDir="false" afterPath="$PROJECT_DIR$/firebase.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/protectedApp/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/saveNewUserInDb.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/protectedApp/saveNewUserInDb.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/validateFirebaseIdToken.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/protectedApp/validateFirebaseIdToken.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/unprotectedApp/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/unprotectedApp/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/itemUpload.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/protectedApp/itemUpload.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/searchItems.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/protectedApp/searchItems.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +36,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../artbid-reactjs" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -100,7 +95,9 @@
       <workItem from="1613659774104" duration="186000" />
       <workItem from="1614931092466" duration="2279000" />
       <workItem from="1615012938062" duration="6010000" />
-      <workItem from="1615097519520" duration="7363000" />
+      <workItem from="1615097519520" duration="7657000" />
+      <workItem from="1615125001771" duration="27000" />
+      <workItem from="1617117342062" duration="2082000" />
     </task>
     <servers />
   </component>
