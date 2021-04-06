@@ -11,7 +11,7 @@ interface mResponse {
     statusCode: number,
     isError: boolean,
     error: string | any,
-    suggestions: any
+    suggestions: any,
 }
 
 //Function that handles the upload item api
@@ -19,8 +19,10 @@ const getSearchSuggestions = async (req : customRequest, res : Response) => {
     try {
 
         const {
-            searchText = null,
+            searchText ,
         } = req.body
+
+        console.log("search text for suggestions is : ", searchText)
 
         if(searchText === "" || searchText == null) {
             const errorRes: mResponse = {
@@ -37,16 +39,20 @@ const getSearchSuggestions = async (req : customRequest, res : Response) => {
 
         const snapshots = await itemCollection
             .where("key_map", 'array-contains', searchText)
-            .orderBy("score")
+            .orderBy("score", 'desc')
             .limit(10)
             .get()
 
+        let suggestions: string[] = []
+        snapshots.forEach(snap => {
+            suggestions.push(snap.id)
+        })
 
         const response: mResponse = {
             statusCode: 200,
             isError: false,
             error: null,
-            suggestions: snapshots,
+            suggestions,
         }
 
         res.send(response)

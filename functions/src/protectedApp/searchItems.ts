@@ -12,7 +12,8 @@ interface mResponse {
     statusCode: number,
     isError: boolean,
     error: string | any,
-    items: any
+    items: any,
+    allItemsFetched: boolean,
 }
 
 const searchItems = async (req : customRequest, res : Response) => {
@@ -36,11 +37,14 @@ const searchItems = async (req : customRequest, res : Response) => {
 
         const snapshots = await itemsQuery.get()
 
+
+
         const response: mResponse = {
             statusCode: 200,
             isError: false,
             error: null,
             items: snapshots,
+            allItemsFetched: snapshots.size < limit,
         }
 
         res.send(response)
@@ -51,6 +55,7 @@ const searchItems = async (req : customRequest, res : Response) => {
             isError: true,
             error: error,
             items: null,
+            allItemsFetched: false,
         }
 
         res.send(response)

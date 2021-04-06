@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c751948-b1d8-4324-9994-fd4491f5a41d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/functions/src/protectedApp/getSearchSuggestions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/protectedApp/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/getSearchSuggestions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/protectedApp/getSearchSuggestions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/itemUpload.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/protectedApp/itemUpload.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/searchItems.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/protectedApp/searchItems.ts" afterDir="false" />
     </list>
@@ -97,7 +96,9 @@
       <workItem from="1615012938062" duration="6010000" />
       <workItem from="1615097519520" duration="7657000" />
       <workItem from="1615125001771" duration="27000" />
-      <workItem from="1617117342062" duration="2082000" />
+      <workItem from="1617117342062" duration="2418000" />
+      <workItem from="1617698191255" duration="655000" />
+      <workItem from="1617719525807" duration="5545000" />
     </task>
     <servers />
   </component>
