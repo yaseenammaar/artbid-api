@@ -33,14 +33,13 @@ const itemUpload = async (req: customRequest, res: Response) => {
             supporting_images,
         } = req.body
 
-        const search_tags_demo: string[] = [title, state, category, caption]
-        console.log(search_tags_demo)
         const search_tags: string[] = []
-        search_tags.push(title)
-        search_tags.push(state)
-        search_tags.push(category)
-        search_tags.push(caption)
+        search_tags.push(title.toString().toLowerCase())
+        search_tags.push(state.toString().toLowerCase())
+        search_tags.push(category.toString().toLowerCase())
+        search_tags.push(caption.toString().toLowerCase())
 
+        console.log("search tags : ", search_tags)
 
         let search_permutations: string[] = []
 
