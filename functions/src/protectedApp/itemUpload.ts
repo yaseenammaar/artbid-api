@@ -1,5 +1,7 @@
 import {Request, Response} from "express";
 import appAdmin from "../firebaseAdmin"
+import {firestore} from "firebase-admin/lib/firestore";
+import Timestamp = firestore.Timestamp;
 
 const db = appAdmin.firestore()
 
@@ -70,7 +72,7 @@ const itemUpload = async (req: customRequest, res: Response) => {
             available_state,
             base_price,
             by_user,
-            caption,
+            description: caption,
             category,
             closing_date,
             closing_time,
@@ -81,6 +83,7 @@ const itemUpload = async (req: customRequest, res: Response) => {
             supporting_images,
             search_tags,
             search_permutations,
+            upload_timestamp: Timestamp.now(),
         })
 
         itemRes = await batch.commit()

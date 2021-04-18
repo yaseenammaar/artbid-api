@@ -3,7 +3,7 @@ import * as express from "express";
 import updateUserData from "./updateUserData";
 import * as bodyParser from "body-parser";
 import getFirebaseRecord from "./getFirestoreRecord";
-import searchItems from "./searchItems";
+import getSearchResults from "./getSearchResults";
 import saveNewUserInDb from "./saveNewUserInDb";
 import itemUpload from "./itemUpload";
 import toggleFollowUnfollow from "./toggleFollowUnfollow";
@@ -41,7 +41,7 @@ protectedApp.post("/updateUserData", jsonParser, updateUserData)
 //api to search items
 // json Parser is needed
 // @ts-ignore
-protectedApp.post("/searchItems", jsonParser, searchItems)
+protectedApp.post("/getSearchResults", jsonParser, getSearchResults)
 
 //api to any any document from firestore
 //json Parser is needed

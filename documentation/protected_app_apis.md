@@ -4,7 +4,7 @@
 
 - [itemUpload](../functions/src/protectedApp/itemUpload.ts)
 - [saveNewUserInDb](../functions/src/protectedApp/saveNewUserInDb.ts)
-- [searchItems](../functions/src/protectedApp/searchItems.ts)
+- [getSearchResults](../functions/src/protectedApp/getSearchResults.ts)
 - [updateUserData](../functions/src/protectedApp/updateUserData.ts)
 - [getFirestoreRecord](../functions/src/protectedApp/getFirestoreRecord.ts)
 - [toggleFollowUnfollow](../functions/src/protectedApp/toggleFollowUnfollow.ts)
