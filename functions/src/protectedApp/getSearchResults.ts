@@ -55,8 +55,14 @@ const getSearchResults = async (req : customRequest, res : Response) => {
 
         snapshots.forEach(result => {
 
+            let data = result.data()
+            if(data) {
+                delete data["search_tags"]
+                delete data["search_permutations"]
+            }
+
             packedItems.push({
-                docData: result.data(),
+                docData: data,
                 id: result.id,
             })
         })

@@ -9,4 +9,4 @@
 - [getFirestoreRecord](../functions/src/protectedApp/getFirestoreRecord.ts)
 - [toggleFollowUnfollow](../functions/src/protectedApp/toggleFollowUnfollow.ts)
 - [saveItemForUser](../functions/src/protectedApp/saveItemForUser.ts)  
-- [getItems](../functions/src/protectedApp/getItems.ts)
+- [getItems](../functions/src/protectedApp/getSpecificItem.ts)

@@ -4,9 +4,9 @@
     <list default="true" id="1c751948-b1d8-4324-9994-fd4491f5a41d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/documentation/protected_app_apis.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/protected_app_apis.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/getItems.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/protectedApp/getSpecificItem.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/getSearchResults.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/protectedApp/getSearchResults.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/protectedApp/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/itemUpload.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/protectedApp/itemUpload.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/searchItems.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/protectedApp/getSearchResults.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +105,8 @@
       <workItem from="1617865688425" duration="487000" />
       <workItem from="1618048513468" duration="3320000" />
       <workItem from="1618645189857" duration="8155000" />
-      <workItem from="1618739739364" duration="526000" />
+      <workItem from="1618739739364" duration="567000" />
+      <workItem from="1619328970504" duration="4149000" />
     </task>
     <servers />
   </component>

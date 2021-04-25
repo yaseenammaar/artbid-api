@@ -8,7 +8,7 @@ import saveNewUserInDb from "./saveNewUserInDb";
 import itemUpload from "./itemUpload";
 import toggleFollowUnfollow from "./toggleFollowUnfollow";
 import saveItemForUser from "./saveItemForUser";
-import getItems from "./getItems";
+import getSpecificItem from "./getSpecificItem";
 import getSearchSuggestions from "./getSearchSuggestions";
 
 // express instance of after auth middleware
@@ -71,7 +71,7 @@ protectedApp.post("/saveItemForUser", jsonParser, saveItemForUser)
 //api to get items from db
 // json Parser is needed
 // @ts-ignore
-protectedApp.post("/getItems", jsonParser, getItems)
+protectedApp.post("/getSpecificItem", jsonParser, getSpecificItem)
 
 //api to get items from db
 // json Parser is needed
