@@ -2,7 +2,6 @@ import validateFirebaseIdToken from "./validateFirebaseIdToken";
 import * as express from "express";
 import updateUserData from "./updateUserData";
 import * as bodyParser from "body-parser";
-import getFirebaseRecord from "./getFirestoreRecord";
 import getSearchResults from "./getSearchResults";
 import saveNewUserInDb from "./saveNewUserInDb";
 import itemUpload from "./itemUpload";
@@ -10,6 +9,7 @@ import toggleFollowUnfollow from "./toggleFollowUnfollow";
 import saveItemForUser from "./saveItemForUser";
 import getSpecificItem from "./getSpecificItem";
 import getSearchSuggestions from "./getSearchSuggestions";
+import bid from "./bid";
 
 // express instance of after auth middleware
 const protectedApp = express.Router()
@@ -43,11 +43,6 @@ protectedApp.post("/updateUserData", jsonParser, updateUserData)
 // @ts-ignore
 protectedApp.post("/getSearchResults", jsonParser, getSearchResults)
 
-//api to any any document from firestore
-//json Parser is needed
-// @ts-ignore
-protectedApp.post("/getFirestoreDocument", jsonParser, getFirebaseRecord)
-
 //api to save new user in firestore after successful login
 // json Parser is needed
 // @ts-ignore
@@ -77,5 +72,10 @@ protectedApp.post("/getSpecificItem", jsonParser, getSpecificItem)
 // json Parser is needed
 // @ts-ignore
 protectedApp.post("/getSearchSuggestions", jsonParser, getSearchSuggestions)
+
+//api to bid
+// json Parser is needed
+// @ts-ignore
+protectedApp.post("/bid", jsonParser, bid)
 
 export default protectedApp
