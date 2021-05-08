@@ -21,25 +21,19 @@ const itemUpload = async (req: customRequest, res: Response) => {
     try {
 
         const {
-            available_state = 'All',
-            base_price,
-            by_user,
-            caption,
+            newDocId,
+            basePrice,
+            description,
             category,
-            closing_date,
-            closing_time,
-            state,
-            status,
+            closingTimestamp,
             title,
-            featured_image,
-            supporting_images,
+            featuredImage,
+            supportingImages,
         } = req.body
 
         const search_tags: string[] = []
         search_tags.push(title.toString().toLowerCase())
-        search_tags.push(state.toString().toLowerCase())
         search_tags.push(category.toString().toLowerCase())
-        search_tags.push(caption.toString().toLowerCase())
 
         console.log("search tags : ", search_tags)
 
@@ -68,22 +62,18 @@ const itemUpload = async (req: customRequest, res: Response) => {
             })
         }
 
-        batch.set(itemCollection.doc(), {
-            available_state,
-            base_price,
-            by_user,
-            description: caption,
+        batch.set(itemCollection.doc(newDocId), {
+            basePrice,
+            byUser: req.user.uid,
+            description,
             category,
-            closing_date,
-            closing_time,
-            state,
-            status,
+            closingTimestamp,
             title,
-            featured_image,
-            supporting_images,
+            featuredImage,
+            supportingImages,
             search_tags,
             search_permutations,
-            upload_timestamp: Timestamp.now(),
+            uploadTimestamp: Timestamp.now(),
         })
 
         itemRes = await batch.commit()

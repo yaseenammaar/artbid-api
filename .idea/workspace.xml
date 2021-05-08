@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c751948-b1d8-4324-9994-fd4491f5a41d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/functions/src/Logics/createUserInDb.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/protectedApp/bid.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/src/protectedApp/messageOnItem.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/protected_app_apis.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/protected_app_apis.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/getFirestoreRecord.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/bid.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/protectedApp/bid.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/protectedApp/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/itemUpload.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/protectedApp/itemUpload.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +109,12 @@
       <workItem from="1619328970504" duration="4196000" />
       <workItem from="1619967397334" duration="915000" />
       <workItem from="1619970625431" duration="1358000" />
-      <workItem from="1620111725861" duration="6382000" />
+      <workItem from="1620111725861" duration="6687000" />
+      <workItem from="1620199634091" duration="70000" />
+      <workItem from="1620227556752" duration="605000" />
+      <workItem from="1620282319385" duration="1309000" />
+      <workItem from="1620297440748" duration="24000" />
+      <workItem from="1620462752502" duration="1585000" />
     </task>
     <servers />
   </component>

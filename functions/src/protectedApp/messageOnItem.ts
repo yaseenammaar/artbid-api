@@ -2,7 +2,6 @@ import {Request, Response} from "express";
 import admin from "../firebaseAdmin"
 import * as functions from 'firebase-functions';
 import {firestore} from "firebase-admin/lib/firestore";
-import FieldValue = firestore.FieldValue;
 import Timestamp = firestore.Timestamp;
 
 const db = admin.firestore()
@@ -18,38 +17,33 @@ interface mResponse {
     writeTime:any
 }
 
-const bid = async (req : customRequest, res : Response) => {
+const messageOnItem = async (req : customRequest, res : Response) => {
     let response: mResponse;
     try {
 
-        const NUM_SHARDS = 5
-
         const {
-            plusAmount = 0,
+            message = "",
             itemId,
         } = req.body
 
-        if(!("plusAmount" in req.body) || req.body.plusAmount == null || typeof req.body.plusAmount != "number") {
-            throwError("invalid amount data found")
+        if(!("message" in req.body) || req.body.message == null || typeof req.body.message != "string") {
+            throwError("invalid message found")
             return
         }
 
         if(!("itemId" in req.body) || req.body.itemId == null || typeof req.body.itemId != "string") {
-            throwError("invalid item data found")
+            throwError("invalid item id found")
             return
         }
 
-        if(plusAmount <= 0) {
-            throwError("amount is less than or equal to zero.")
+        if(message.trim() == "") {
+            throwError("empty message found.")
             return
         }
 
         const itemDocRef = db.collection("items").doc(itemId)
-        const bidCollectionRef = itemDocRef.collection("bids_and_messages")
-        const newBidDocRef = bidCollectionRef.doc()
-        const bidShardCollectionRef = itemDocRef.collection("bid_shards")
-        const shardId = Math.floor(Math.random() * NUM_SHARDS);
-        const bidShardDocRef = bidShardCollectionRef.doc(shardId.toString())
+        const messageCollectionRef = itemDocRef.collection("bids_and_messages")
+        const newMessageDocRef = messageCollectionRef.doc()
 
         const item = await itemDocRef.get()
         if(!item.exists) {
@@ -63,32 +57,16 @@ const bid = async (req : customRequest, res : Response) => {
             return
         }
 
-        // @ts-ignore
-        const validityTime: admin.firestore.Timestamp = itemData["closingTimestamp"]
-        const currTime = admin.firestore.Timestamp.now()
-        if(currTime.toDate() > validityTime.toDate()) {
-            throwError("validity time has passed.")
-        }
-
-        const batch = db.batch();
-        batch.set(newBidDocRef, {
+        const writeRes = await newMessageDocRef.set({
             byUser: req.user.uid,
-            plusAmount: plusAmount,
-            type: "bid",
+            message: message,
+            type: "message",
             creationTimestamp: Timestamp.now(),
         })
 
-        batch.set(bidShardDocRef, {
-            bidCount: FieldValue.increment(1),
-            addedPriceCount: FieldValue.increment(plusAmount),
-            creationTimestamp: Timestamp.now(),
-        }, {merge: true})
-
-        const batchRes = await batch.commit()
-
 
         response= {
-            writeTime: batchRes,
+            writeTime: writeRes.writeTime,
             isError:false,
             error:null,
             statusCode:200,
@@ -113,5 +91,5 @@ function throwError(message: string) {
     throw new Error(message)
 }
 
-export default bid
+export default messageOnItem
 

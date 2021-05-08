@@ -10,6 +10,7 @@ import saveItemForUser from "./saveItemForUser";
 import getSpecificItem from "./getSpecificItem";
 import getSearchSuggestions from "./getSearchSuggestions";
 import bid from "./bid";
+import messageOnItem from "./messageOnItem";
 
 // express instance of after auth middleware
 const protectedApp = express.Router()
@@ -77,5 +78,10 @@ protectedApp.post("/getSearchSuggestions", jsonParser, getSearchSuggestions)
 // json Parser is needed
 // @ts-ignore
 protectedApp.post("/bid", jsonParser, bid)
+
+//api to message on item
+// json Parser is needed
+// @ts-ignore
+protectedApp.post("/messageOnItem", jsonParser, messageOnItem)
 
 export default protectedApp
