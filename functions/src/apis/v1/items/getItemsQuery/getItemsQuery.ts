@@ -2,7 +2,7 @@ import {Request, Response} from "express";
 import appAdmin from "../../../../utils/firebaseAdmin"
 import statusCodes from "../../../../constants/statusCodes";
 import mResponse from "./Response";
-import Item from "../../../../models/item";
+import Item from "../../../../models/Item";
 
 const db = appAdmin.firestore()
 

@@ -3,7 +3,7 @@ import errorCodes from "../../../../constants/statusCodes";
 import admin from "../../../../utils/firebaseAdmin";
 import * as fireAdmin from "firebase-admin";
 import mResponse from "./Response";
-import Item from "../../../../models/item";
+import Item from "../../../../models/Item";
 
 const ITEM_COLLECTION = "items"
 const SEARCH_TAG_FIELD = "searchTags"

@@ -63,6 +63,7 @@ const bid = async (req : customRequest, res : Response) => {
             return
         }
 
+
         // @ts-ignore
         const validityTime: admin.firestore.Timestamp = itemData["closingTimestamp"]
         const currTime = admin.firestore.Timestamp.now()

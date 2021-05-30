@@ -5,8 +5,8 @@ import Timestamp = firestore.Timestamp;
 import statusCodes from "../../../../constants/statusCodes";
 import mResponse from "./Response";
 import RequestWithUser from "../../../../utils/RequestWithUser";
-import Keyword from "../../../../models/keyword";
-import Item from "../../../../models/item";
+import Keyword from "../../../../models/Keyword";
+import Item from "../../../../models/Item";
 
 const db = appAdmin.firestore()
 
@@ -60,7 +60,7 @@ const addNewItem = async (req : RequestWithUser, res : Response) => {
             byUser: req.user.uid,
             description,
             category,
-            closingTimestamp,
+            closingTimestamp: Timestamp.fromDate(new Date(closingTimestamp)),
             title,
             featuredImage,
             supportingImages,

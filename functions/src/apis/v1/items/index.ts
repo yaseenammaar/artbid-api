@@ -4,6 +4,7 @@ import { getItemsQuery, getItemsQueryValidationRules, validateGetItemsQuery } fr
 import { validateAddNewItem, addNewItemValidationRules, addNewItem } from './addNewItem'
 import { validateUpdateItem, updateItemValidationRules, updateItem } from './updateItem'
 import { validateDeleteItem, deleteItemValidationRules, deleteItem } from './deleteItem'
+import { validatePostBidOrMessage, postBidOrMessageValidationRules, postBidOrMessage } from './postBidOrMessage'
 
 const itemRouter = express.Router()
 
@@ -12,6 +13,9 @@ itemRouter.get('/item/:itemId', getSpecificItemValidationRules, validateGetSpeci
 itemRouter.post('/item', addNewItemValidationRules, validateAddNewItem, addNewItem)
 itemRouter.put('/item/:itemId', updateItemValidationRules, validateUpdateItem, updateItem)
 itemRouter.delete('/item/:itemId', deleteItemValidationRules, validateDeleteItem, deleteItem)
+
+// @ts-ignore
+itemRouter.post('/item/:itemId/:bidType(bid|message)', postBidOrMessageValidationRules, validatePostBidOrMessage, postBidOrMessage)
 
 itemRouter.get("/items", getItemsQueryValidationRules , validateGetItemsQuery, getItemsQuery)
 

@@ -4,7 +4,7 @@ import * as functions from "firebase-functions";
 import admin from "../../../../utils/firebaseAdmin";
 import statusCodes from "../../../../constants/statusCodes";
 import mResponse from "./Response";
-import User from "../../../../models/user";
+import User from "../../../../models/User";
 
 const db = admin.firestore()
 

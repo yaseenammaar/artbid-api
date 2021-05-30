@@ -3,7 +3,7 @@ import RequestWithUser from "../../../../utils/RequestWithUser";
 import appAdmin from "../../../../utils/firebaseAdmin";
 import mResponse from "./Response";
 import statusCodes from "../../../../constants/statusCodes";
-import User from "../../../../models/user";
+import User from "../../../../models/User";
 
 const db = appAdmin.firestore()
 const Modes = {

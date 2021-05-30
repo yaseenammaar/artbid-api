@@ -2,101 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c751948-b1d8-4324-9994-fd4491f5a41d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/functions/service_key_emulator.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/beta/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/addNewItem/Response.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/addNewItem/ValidationRules.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/addNewItem/addNewItem.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/addNewItem/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/addNewItem/validate.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/deleteItem/Response.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/deleteItem/deleteItem.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/deleteItem/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/deleteItem/validate.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/deleteItem/validationRules.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/getItemsQuery/Response.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/getItemsQuery/getItemsQuery.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/getItemsQuery/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/getItemsQuery/validate.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/getItemsQuery/validationRules.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/getSpecificItem/Response.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/getSpecificItem/getSpecificItem.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/getSpecificItem/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/getSpecificItem/validate.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/getSpecificItem/validationRules.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/postBidOrMessage/Response.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/postBidOrMessage/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/postBidOrMessage/postBidOrMessage.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/postBidOrMessage/validate.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/postBidOrMessage/validationRules.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/updateItem/Response.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/updateItem/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/updateItem/updateItem.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/updateItem/validate.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/updateItem/validationRules.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/search/getSearchResults/Response.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/search/getSearchResults/getSearchResults.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/search/getSearchResults/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/search/getSearchResults/validate.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/search/getSearchResults/validationRules.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/search/getSearchSuggestions/Response.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/search/getSearchSuggestions/getSearchSuggestions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/search/getSearchSuggestions/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/search/getSearchSuggestions/validate.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/search/getSearchSuggestions/validationRules.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/search/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/addNewUser/Response.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/addNewUser/addNewUser.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/addNewUser/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/addNewUser/validate.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/addNewUser/validationRules.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/deleteUser/Response.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/deleteUser/deleteUser.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/deleteUser/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/deleteUser/validate.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/deleteUser/validationRules.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/getUser/Response.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/getUser/getUser.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/getUser/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/getUser/validate.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/getUser/validationRules.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/updateUser/Response.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/updateUser/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/updateUser/updateUser.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/updateUser/validate.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/updateUser/validationRules.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/constants/statusCodes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/models/item.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/models/keyword.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/models/user.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/utils/BaseResponse.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/utils/BaseValidator.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/utils/RequestWithUser.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/src/models/BidShard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/src/models/ItemBid.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/src/models/ItemMessage.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/protected_app_apis.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/protected_app_apis.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/Logics/createUserInDb.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/beta/Logics/createUserInDb.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/Logics/updateFirestore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/beta/Logics/updateFirestore.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/firebaseAdmin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/utils/firebaseAdmin.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/bid.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/beta/protectedApp/bid.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/getSearchResults.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/beta/protectedApp/getSearchResults.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/getSearchSuggestions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/beta/protectedApp/getSearchSuggestions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/getSpecificItem.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/beta/protectedApp/getSpecificItem.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/beta/protectedApp/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/itemUpload.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/beta/protectedApp/itemUpload.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/messageOnItem.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/beta/protectedApp/messageOnItem.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/saveItemForUser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/beta/protectedApp/saveItemForUser.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/saveNewUserInDb.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/beta/protectedApp/saveNewUserInDb.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/toggleFollowUnfollow.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/beta/protectedApp/toggleFollowUnfollow.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/updateUserData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/beta/protectedApp/updateUserData.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/protectedApp/validateFirebaseIdToken.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/utils/validateFirebaseIdToken.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/unprotectedApp/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/beta/unprotectedApp/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/apis/beta/protectedApp/bid.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/beta/protectedApp/bid.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/apis/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/apis/v1/items/addNewItem/addNewItem.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/addNewItem/addNewItem.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/apis/v1/items/getItemsQuery/getItemsQuery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/getItemsQuery/getItemsQuery.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/apis/v1/items/getSpecificItem/getSpecificItem.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/getSpecificItem/getSpecificItem.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/apis/v1/items/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/apis/v1/items/postBidOrMessage/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/postBidOrMessage/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/apis/v1/items/postBidOrMessage/postBidOrMessage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/postBidOrMessage/postBidOrMessage.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/apis/v1/items/postBidOrMessage/validationRules.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/postBidOrMessage/validationRules.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/apis/v1/search/getSearchResults/getSearchResults.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/v1/search/getSearchResults/getSearchResults.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/apis/v1/users/addNewUser/addNewUser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/addNewUser/addNewUser.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/apis/v1/users/getUser/getUser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/getUser/getUser.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/models/item.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/models/Item.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/models/keyword.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/models/Keyword.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/models/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/models/User.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +42,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1l9K78qaJBaccmpj9SzlS8UbUbA" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -229,7 +155,9 @@
       <workItem from="1622021681779" duration="11502000" />
       <workItem from="1622110861147" duration="10181000" />
       <workItem from="1622189462830" duration="19068000" />
-      <workItem from="1622274045610" duration="10690000" />
+      <workItem from="1622274045610" duration="11333000" />
+      <workItem from="1622357664307" duration="18361000" />
+      <workItem from="1622387893458" duration="97000" />
     </task>
     <servers />
   </component>
