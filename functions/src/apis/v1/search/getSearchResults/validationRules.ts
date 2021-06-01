@@ -42,7 +42,7 @@ const validationSchema: Record<string, ParamSchema> = {
         },
         custom: {
             options: (value) => {
-                if(typeof value != 'string' || !Number.isInteger(parseInt(value))) {
+                if(typeof value !== 'string' || !Number.isInteger(parseInt(value))) {
                     throw new Error('limit is not valid')
                 }
 

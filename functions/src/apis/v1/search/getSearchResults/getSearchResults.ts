@@ -28,7 +28,7 @@ const getSearchResults = async (req : Request, res : Response) => {
 
         let itemsQuery: fireAdmin.firestore.Query
 
-        if(method == "search") {
+        if(method === "search") {
             itemsQuery = makeSearchMethodQuery(parseInt(limit.toString()), keyword, lastResultId)
         }
         else {
@@ -36,11 +36,11 @@ const getSearchResults = async (req : Request, res : Response) => {
         }
 
         const snapshots = await itemsQuery.get()
-        let packedItems: Item[] = []
+        const packedItems: Item[] = []
 
         snapshots.forEach(result => {
 
-            let item = <Item>result.data()
+            const item = <Item>result.data()
             if(item) {
                 delete item.searchTags
                 delete item.searchPermutations

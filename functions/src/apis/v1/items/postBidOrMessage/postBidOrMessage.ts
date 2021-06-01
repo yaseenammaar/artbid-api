@@ -58,7 +58,7 @@ const postBidOrMessage = async (req : RequestWithUser, res : Response) => {
             res.status(statusCodes.BAD_REQUEST).send(errorRes)
         }
 
-        if(bidType == "bid") {
+        if(bidType === "bid") {
             await bidOnItem(itemDocRef, plusAmount, uid)
         }
         else {

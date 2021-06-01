@@ -20,7 +20,7 @@ const getSearchSuggestions = async (req : Request, res : Response) => {
             .limit(10)
             .get()
 
-        let suggestions: string[] = []
+        const suggestions: string[] = []
         snapshots.forEach(snap => {
             suggestions.push(snap.id)
         })

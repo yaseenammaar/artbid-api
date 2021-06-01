@@ -2,27 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c751948-b1d8-4324-9994-fd4491f5a41d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/functions/src/models/BidShard.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/models/ItemBid.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/models/ItemMessage.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/saveItemForUser/Response.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/saveItemForUser/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/saveItemForUser/saveItemForUser.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/saveItemForUser/validate.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/saveItemForUser/validationRules.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/followUnfollowUser/Response.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/followUnfollowUser/followUnfollowUser.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/followUnfollowUser/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/followUnfollowUser/validate.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/followUnfollowUser/validationRules.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/src/models/FollowData.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/src/models/SavedItem.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/apis/beta/protectedApp/bid.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/beta/protectedApp/bid.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/apis/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/apis/v1/items/addNewItem/addNewItem.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/addNewItem/addNewItem.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/apis/v1/items/getItemsQuery/getItemsQuery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/getItemsQuery/getItemsQuery.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/apis/v1/items/getSpecificItem/getSpecificItem.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/getSpecificItem/getSpecificItem.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions/src/apis/v1/items/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/apis/v1/items/postBidOrMessage/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/postBidOrMessage/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/apis/v1/items/postBidOrMessage/postBidOrMessage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/postBidOrMessage/postBidOrMessage.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/apis/v1/items/postBidOrMessage/validationRules.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/postBidOrMessage/validationRules.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/apis/v1/search/getSearchResults/getSearchResults.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/v1/search/getSearchResults/getSearchResults.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/apis/v1/users/addNewUser/addNewUser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/addNewUser/addNewUser.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/apis/v1/users/getUser/getUser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/getUser/getUser.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/models/item.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/models/Item.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/models/keyword.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/models/Keyword.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/models/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/models/User.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/apis/v1/users/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/constants/DbCollections.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/constants/DbCollections.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +49,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../artbid-reactjs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -158,6 +153,9 @@
       <workItem from="1622274045610" duration="11333000" />
       <workItem from="1622357664307" duration="18361000" />
       <workItem from="1622387893458" duration="97000" />
+      <workItem from="1622388002933" duration="84000" />
+      <workItem from="1622432881946" duration="10378000" />
+      <workItem from="1622528467079" duration="4411000" />
     </task>
     <servers />
   </component>

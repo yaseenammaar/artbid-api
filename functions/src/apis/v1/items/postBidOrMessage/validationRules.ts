@@ -30,7 +30,7 @@ const validationSchema: Record<string, ParamSchema> = {
             options: (value, {req}) => {
 
                 if(req.params?.bidType === "bid") {
-                    if(value === null || value == "" || value === undefined || typeof value != "string") {
+                    if(value === null || value === "" || value === undefined || typeof value !== "string") {
                         throw new Error("plus amount required")
                     }
 
@@ -68,7 +68,7 @@ const validationSchema: Record<string, ParamSchema> = {
 
                 console.log(typeof value, value)
                 if(req.params?.bidType === "message") {
-                    if(value === null || value == "" || value === undefined || typeof value != "string") {
+                    if(value === null || value === "" || value === undefined || typeof value !== "string") {
                         throw new Error("message required")
                     }
                 }

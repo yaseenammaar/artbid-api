@@ -22,7 +22,7 @@ const getSpecificItem = async (req : Request, res : Response) => {
             })
         }
 
-        let item = <Item>itemSnapshot.data()
+        const item = <Item>itemSnapshot.data()
         if (item) {
             delete item.searchTags
             delete item.searchPermutations
