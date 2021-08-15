@@ -1,8 +1,9 @@
 import * as functions from 'firebase-functions';
 import * as cors from "cors";
-import apiExpressApp from "./apis";
+import apiExpressApp, {own_api_v1} from "./apis";
 
 export const api = functions.https.onRequest(apiExpressApp)
+export const own_api = functions.https.onRequest(own_api_v1)
 
 const corsHandler = cors({origin: true})
 export const testApi = functions.https.onRequest((request, response) => {

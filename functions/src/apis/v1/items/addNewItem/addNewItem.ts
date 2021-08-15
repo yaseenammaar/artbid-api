@@ -7,6 +7,7 @@ import mResponse from "./Response";
 import RequestWithUser from "../../../../utils/RequestWithUser";
 import Keyword from "../../../../models/Keyword";
 import Item from "../../../../models/Item";
+import DbCollections from "../../../../constants/DbCollections";
 
 const db = appAdmin.firestore()
 
@@ -30,8 +31,8 @@ const addNewItem = async (req : RequestWithUser, res : Response) => {
 
         let searchPermutations: string[] = []
 
-        const itemCollection = db.collection('items')
-        const keywordsCollection = db.collection('keywords')
+        const itemCollection = db.collection(DbCollections.ITEMS)
+        const keywordsCollection = db.collection(DbCollections.KEYWORDS)
 
         let updateResult
         const batch = db.batch();

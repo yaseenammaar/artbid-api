@@ -3,6 +3,7 @@ import * as express from "express";
 import * as cors from "cors";
 import * as helmet from 'helmet'
 import * as requestLimiter from 'express-rate-limit'
+import own_api_v1 from "./own-v1";
 
 // limiter givers status code 429
 const limiter = requestLimiter({
@@ -21,3 +22,4 @@ apiExpressApp.use(limiter)
 apiExpressApp.use('/v1', api_v1)
 
 export default apiExpressApp
+export {own_api_v1}

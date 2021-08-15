@@ -1,5 +1,11 @@
 import * as admin from "firebase-admin"
+const ownServiceCredentials = require('../../own-domains-firebase-service-account-key.json')
 
-admin.initializeApp();
+const app = admin.initializeApp();
 
-export default admin;
+const ownApp = admin.initializeApp({
+    credential: admin.credential.cert(ownServiceCredentials),
+}, "own-app")
+
+export default app;
+export {ownApp}

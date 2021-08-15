@@ -5,8 +5,7 @@ import admin from "../../../../utils/firebaseAdmin";
 import statusCodes from "../../../../constants/statusCodes";
 import mResponse from "./Response";
 import User from "../../../../models/User";
-
-const db = admin.firestore()
+import ArtbidDatabaseManager from "../../../../databaseManager/artbid";
 
 const addNewUser = async (req : RequestWithUser, res : Response) => {
     try {
@@ -31,10 +30,11 @@ const addNewUser = async (req : RequestWithUser, res : Response) => {
             displayName: user.displayName === undefined ? null : user.displayName,
         }
 
-        const writeRes:any = await createUserInDb(userData, uid)
+        const databaseManager = new ArtbidDatabaseManager(admin)
+        const creationRes = await databaseManager.users.createNewDocument(userData, uid)
 
         const response: mResponse = {
-            writeTime: writeRes.writeTime,
+            writeTime: creationRes.writeRes?.writeTime,
             isError:false,
             error:null,
             statusCode: statusCodes.SUCCESS_RESOURCE_CREATED,
@@ -54,21 +54,6 @@ const addNewUser = async (req : RequestWithUser, res : Response) => {
         res.status(statusCodes.SERVICE_UNAVAILABLE).send(response)
     }
 
-}
-
-function createUserInDb(userRecord:any, uid:string) {
-    return new Promise((resolve, reject) => {
-
-        const usersDoc = db.doc("users/" + uid)
-        usersDoc.set(userRecord, { merge: true })
-            .then(function (result: any) {
-                //result.writeTime
-                resolve(result)
-            })
-            .catch(function (error: any) {
-                reject(error)
-            })
-    })
 }
 
 export default addNewUser

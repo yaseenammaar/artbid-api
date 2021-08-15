@@ -8,10 +8,13 @@ import validateFirebaseIdToken from "../../utils/validateFirebaseIdToken";
 const api_v1 = express.Router()
 const corsHandler = cors({origin: true})
 
+interface customRequest extends express.Request {
+    user: any
+}
+
 api_v1.use('*', corsHandler)
 // Middleware to validate Firebase Id token; This ensures the security of api of this route
-// @ts-ignore
-api_v1.use(validateFirebaseIdToken)
+api_v1.use((req, res, next) => validateFirebaseIdToken(<customRequest>req, res, next))
 
 api_v1.use(itemRouter)
 api_v1.use(userRouter)

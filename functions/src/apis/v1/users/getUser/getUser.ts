@@ -1,11 +1,11 @@
 import { Response } from "express";
 import RequestWithUser from "../../../../utils/RequestWithUser";
-import appAdmin from "../../../../utils/firebaseAdmin";
 import mResponse from "./Response";
 import statusCodes from "../../../../constants/statusCodes";
 import User from "../../../../models/User";
+import ArtbidDatabaseManager from "../../../../databaseManager/artbid";
+import admin from "../../../../utils/firebaseAdmin";
 
-const db = appAdmin.firestore()
 const Modes = {
     CURRENT_USER: 1,
     PROTECTED_USER: 2,
@@ -25,8 +25,9 @@ const getUser = async (req : RequestWithUser, res : Response) => {
             fetchUserId = req.user.uid
         }
 
-        const userDoc = await db.collection('users').doc(fetchUserId).get()
-        if(!userDoc.exists) {
+        const databaseManager = new ArtbidDatabaseManager(admin)
+        const readRes = await databaseManager.users.getDocument(fetchUserId)
+        if(!readRes.doc?.exists) {
             const errorRes: mResponse = {
                 statusCode: statusCodes.BAD_REQUEST,
                 isError: true,
@@ -37,7 +38,7 @@ const getUser = async (req : RequestWithUser, res : Response) => {
             return
         }
 
-        const userData: User = <User>userDoc.data()
+        const userData: User = <User>readRes.doc.data()
         console.log(userData)
 
         const {

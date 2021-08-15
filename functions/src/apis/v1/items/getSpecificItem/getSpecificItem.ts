@@ -3,15 +3,16 @@ import appAdmin from "../../../../utils/firebaseAdmin"
 import statusCodes from "../../../../constants/statusCodes";
 import mResponse from "./Response";
 import Item from "../../../../models/Item";
-
-const db = appAdmin.firestore()
+import ArtbidDatabaseManager from "../../../../databaseManager/artbid";
 
 //Function that handles the upload item api
 const getSpecificItem = async (req : Request, res : Response) => {
     try {
         const { itemId } = req.params
 
-        const itemSnapshot = await db.collection("items").doc(itemId).get()
+        const databaseManager = new ArtbidDatabaseManager(appAdmin)
+        const readResult = await databaseManager.items.getDocument(itemId)
+        const itemSnapshot = readResult.doc!!
 
         if(!itemSnapshot.exists) {
             res.status(statusCodes.NOT_FOUND).send({

@@ -1,12 +1,14 @@
 import {NextFunction, Request, Response} from "express"
-import * as admin from "firebase-admin"
+import firebaseAdmin from "./firebaseAdmin";
 import * as functions from 'firebase-functions';
+import {app} from "firebase-admin";
+import App = app.App;
 
 interface customRequest extends Request {
     user: any
 }
 
-const validateFirebaseIdToken = async (req : customRequest, res : Response, next : NextFunction) => {
+const validateFirebaseIdToken = async (req : customRequest, res : Response, next : NextFunction, myApp : App = firebaseAdmin) => {
     functions.logger.info('Check if request is authorized with Firebase ID token');
 
     if ((!req.headers.authorization || !req.headers.authorization.startsWith('Bearer ')) &&
@@ -35,7 +37,7 @@ const validateFirebaseIdToken = async (req : customRequest, res : Response, next
     }
 
     try {
-        const decodedIdToken = await admin.auth().verifyIdToken(idToken)
+        const decodedIdToken = await myApp.auth().verifyIdToken(idToken)
         console.log('ID Token correctly decoded', decodedIdToken)
         req.user = decodedIdToken
         functions.logger.log(decodedIdToken)
