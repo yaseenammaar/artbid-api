@@ -75,8 +75,32 @@ export namespace OwnUtils {
     }
 
     export async function getDomainAvailability(domain: string) {
-        const url = `${baseUrl}/v1/domains/available?domain=${domain}&checkType=FULL`
-        return await request('get', url)
+        try {
+            const url = `${baseUrl}/v1/domains/available?domain=${domain}&checkType=FULL`
+            return await request('get', url)
+        }
+        catch (e) {
+            if(axios.isAxiosError(e)) {
+                return e.response ?
+                    e.response
+                    :
+                    {
+                        status : 400,
+                        data: {
+                            available: false,
+                        },
+                    }
+            }
+            else {
+                return {
+                    status: 400,
+                    data: {
+                        available: false,
+                    },
+                }
+            }
+        }
+
     }
 
     export async function getDomainAvailabilityMultiple(domains: string[]) {

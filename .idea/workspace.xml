@@ -5,39 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c751948-b1d8-4324-9994-fd4491f5a41d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/functions/lib/apis/own-v1/variants.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/own-domains-firebase-service-account-key.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/own-v1/domain/getSearchResults/Response.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/own-v1/domain/getSearchResults/getSearchResults.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/own-v1/domain/getSearchResults/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/own-v1/domain/getSearchResults/validate.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/own-v1/domain/getSearchResults/validationRules.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/own-v1/domain/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/apis/own-v1/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/databaseManager/BaseCollectionManager.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/databaseManager/BaseResult.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/databaseManager/artbid/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/databaseManager/artbid/items/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/databaseManager/artbid/keywords/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/databaseManager/artbid/user/Followers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/databaseManager/artbid/user/Following.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/databaseManager/artbid/user/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/src/utils/OwnUtils.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/.eslintrc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/apis/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/apis/v1/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/v1/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/apis/v1/items/addNewItem/addNewItem.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/addNewItem/addNewItem.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/apis/v1/items/getSpecificItem/getSpecificItem.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/getSpecificItem/getSpecificItem.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/apis/v1/users/addNewUser/addNewUser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/addNewUser/addNewUser.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/apis/v1/users/followUnfollowUser/followUnfollowUser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/followUnfollowUser/followUnfollowUser.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/apis/v1/users/getUser/getUser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/getUser/getUser.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/utils/firebaseAdmin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/utils/firebaseAdmin.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/src/utils/validateFirebaseIdToken.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/utils/validateFirebaseIdToken.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/utils/OwnUtils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/utils/OwnUtils.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +156,8 @@
       <workItem from="1628665261605" duration="1052000" />
       <workItem from="1628666346617" duration="2948000" />
       <workItem from="1628950680184" duration="7616000" />
-      <workItem from="1629039762942" duration="3790000" />
+      <workItem from="1629039762942" duration="4855000" />
+      <workItem from="1629123421697" duration="2482000" />
     </task>
     <servers />
   </component>
