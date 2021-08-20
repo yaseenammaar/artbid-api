@@ -6,7 +6,7 @@ const getSearchResults = async (req : Request, res : Response) => {
     const {
         domain,
     } = req.params
-    console.log("domain is : ", domain)
+    OwnUtils.log("domain is : ", domain)
 
     let isDomainAvailable: boolean = false
     let coolDomains: string[] = []
@@ -18,7 +18,7 @@ const getSearchResults = async (req : Request, res : Response) => {
         const availabilityRes = await OwnUtils.getDomainAvailability(domain)
         if(availabilityRes.status == 422) {
             // domain malformed
-            console.log("status: 422", availabilityRes)
+            OwnUtils.log("status: 422", availabilityRes)
             const mDomainError: mResponse = {
                 status:422,
                 error: "Domain is invalid",
@@ -32,12 +32,12 @@ const getSearchResults = async (req : Request, res : Response) => {
         }
         else if(availabilityRes.status == 200) {
             // correct domain; get availability
-            console.log("status: 200", availabilityRes)
+            OwnUtils.log("status: 200", availabilityRes)
             isDomainAvailable = availabilityRes.data['available']
         }
         else {
             // error is there
-            console.log("status: 400", availabilityRes)
+            OwnUtils.log("status: 400", availabilityRes)
             const mErrorRes: mResponse = {
                 status:400,
                 error: "Some other error came",
@@ -82,7 +82,7 @@ const getSearchResults = async (req : Request, res : Response) => {
         res.status(response.status).send(response)
     }
     catch (e) {
-        console.log(e)
+        OwnUtils.log("last catch", e)
         const response: mResponse = {
             status:400,
             error: e.message,

@@ -1,4 +1,5 @@
 import axios, {AxiosRequestConfig} from "axios";
+import * as functions from 'firebase-functions'
 
 // prod secret -> 5p3LPrg2wWqScGC1kfgg5t
 // test secret -> QuQQDXKq1WAWovuAQ6esbV
@@ -20,7 +21,7 @@ export namespace OwnUtils {
         data: any = {}) {
         const apiConfig: AxiosRequestConfig = {
             method,
-            url: url,
+            url: encodeURI(url),
             headers: {
                 'accept': 'application/json',
                 'Authorization': `sso-key ${prodApiKey}:${prodSecret}`,
@@ -76,10 +77,11 @@ export namespace OwnUtils {
 
     export async function getDomainAvailability(domain: string) {
         try {
-            const url = `${baseUrl}/v1/domains/available?domain=${domain}&checkType=FULL`
+            const url = `${baseUrl}/v1/domains/available?domain=${domain}&checkType=FULL&forTransfer=true`
             return await request('get', url)
         }
         catch (e) {
+            log("getDomainAvailability", e)
             if(axios.isAxiosError(e)) {
                 return e.response ?
                     e.response
@@ -116,5 +118,9 @@ export namespace OwnUtils {
     export async function getSupportedTlds() {
         const url = `${baseUrl}/v1/domains/tlds`
         return await axios.get(url)
+    }
+
+    export function log(...e: any){
+        functions.logger.log("own_api", e)
     }
 }
