@@ -1,18 +1,15 @@
-import * as express from "express";
-import * as cors from "cors";
+import {Router, Request} from "express";
 import itemRouter from "./items";
 import userRouter from "./users";
 import searchRouter from "./search";
 import validateFirebaseIdToken from "../../utils/validateFirebaseIdToken";
 
-const api_v1 = express.Router()
-const corsHandler = cors({origin: true})
+const api_v1 = Router()
 
-interface customRequest extends express.Request {
+interface customRequest extends Request {
     user: any
 }
 
-api_v1.use('*', corsHandler)
 // Middleware to validate Firebase Id token; This ensures the security of api of this route
 api_v1.use((req, res, next) => validateFirebaseIdToken(<customRequest>req, res, next))
 

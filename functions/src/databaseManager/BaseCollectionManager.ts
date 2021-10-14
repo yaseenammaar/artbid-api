@@ -4,12 +4,15 @@ import App = app.App;
 import DocumentData = firestore.DocumentData;
 import DocumentReference = firestore.DocumentReference;
 import CollectionReference = firestore.CollectionReference;
+import * as functions from 'firebase-functions';
+
 
 class BaseCollectionManager {
     readonly admin: App
     readonly collection: CollectionReference
     constructor(firebase: App, rootDocRef: DocumentReference | null, collectionName: string) {
         this.admin = firebase
+        functions.logger.debug('BaseCollectionManager:: line: 15', 'admin is', this.admin, firebase)
         if(rootDocRef == null) {
             this.collection = this.admin.firestore().collection(collectionName)
         }

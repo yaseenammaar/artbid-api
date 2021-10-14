@@ -5,6 +5,7 @@ import statusCodes from "../../../../constants/statusCodes";
 import User from "../../../../models/User";
 import ArtbidDatabaseManager from "../../../../databaseManager/artbid";
 import admin from "../../../../utils/firebaseAdmin";
+import * as functions from 'firebase-functions'
 
 const Modes = {
     CURRENT_USER: 1,
@@ -25,6 +26,7 @@ const getUser = async (req : RequestWithUser, res : Response) => {
             fetchUserId = req.user.uid
         }
 
+        functions.logger.debug('getUser', 'admin is', admin)
         const databaseManager = new ArtbidDatabaseManager(admin)
         const readRes = await databaseManager.users.getDocument(fetchUserId)
         if(!readRes.doc?.exists) {
@@ -84,6 +86,7 @@ const getUser = async (req : RequestWithUser, res : Response) => {
         res.status(statusCodes.SUCCESS).send(response)
     }
     catch (e) {
+        functions.logger.error('getUser:: line: 88', e)
         const response: mResponse = {
             statusCode: statusCodes.SERVICE_UNAVAILABLE,
             isError: true,
