@@ -2,11 +2,13 @@ import * as functions from 'firebase-functions';
 import * as cors from "cors";
 import apiExpressApp, {own_api_v1} from "./apis";
 
-export const api = functions.https.onRequest(apiExpressApp)
-export const own_api = functions.https.onRequest(own_api_v1)
+export const api = functions
+    .region('asia-south1')
+    .https.onRequest(apiExpressApp)
+export const own_api = functions.region('asia-south1').https.onRequest(own_api_v1)
 
-const corsHandler = cors({origin: true})
-export const testApi = functions.https.onRequest((request, response) => {
+const corsHandler = cors({origin: '*'})
+export const testApi = functions.region('asia-south1').https.onRequest((request, response) => {
     corsHandler(request, response, () => {
         functions.logger.info("Hello logs!", {structuredData: true});
         response.send("Hello from Firebase!");

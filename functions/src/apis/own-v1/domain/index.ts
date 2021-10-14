@@ -1,7 +1,7 @@
-import * as express from "express";
+import {Router} from "express";
 import { validateGetSearchResults, getSearchResultsValidationRules, getSearchResults } from './getSearchResults'
 
-const domainRouter = express.Router()
+const domainRouter = Router()
 
 domainRouter.get("/domain/search/:domain", getSearchResultsValidationRules, validateGetSearchResults, getSearchResults)
 

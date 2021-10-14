@@ -8,6 +8,18 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/apis/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/apis/own-v1/domain/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/own-v1/domain/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/apis/v1/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/v1/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/apis/v1/items/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/v1/items/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/apis/v1/search/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/v1/search/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/apis/v1/users/getUser/getUser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/getUser/getUser.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/apis/v1/users/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/apis/v1/users/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/databaseManager/BaseCollectionManager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/databaseManager/BaseCollectionManager.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/databaseManager/artbid/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/databaseManager/artbid/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/databaseManager/artbid/user/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/databaseManager/artbid/user/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/functions/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,6 +176,21 @@
       <workItem from="1629519388277" duration="15000" />
       <workItem from="1632850376225" duration="1816000" />
       <workItem from="1632852660365" duration="368000" />
+      <workItem from="1632853248203" duration="87000" />
+      <workItem from="1633360031641" duration="3063000" />
+      <workItem from="1633540585296" duration="945000" />
+      <workItem from="1633608866948" duration="1280000" />
+      <workItem from="1633611495146" duration="2600000" />
+      <workItem from="1633711837919" duration="2660000" />
+      <workItem from="1633742392302" duration="2640000" />
+      <workItem from="1633834091692" duration="3306000" />
+      <workItem from="1633837444950" duration="4707000" />
+      <workItem from="1633842274145" duration="1750000" />
+      <workItem from="1634001668016" duration="4930000" />
+      <workItem from="1634051630524" duration="3910000" />
+      <workItem from="1634101341593" duration="15000" />
+      <workItem from="1634101365432" duration="2403000" />
+      <workItem from="1634184100153" duration="9736000" />
     </task>
     <servers />
   </component>

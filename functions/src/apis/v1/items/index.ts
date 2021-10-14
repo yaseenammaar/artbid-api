@@ -1,4 +1,4 @@
-import * as express from "express";
+import {Router} from "express";
 import { validateGetSpecificItem, getSpecificItemValidationRules, getSpecificItem } from './getSpecificItem'
 import { getItemsQuery, getItemsQueryValidationRules, validateGetItemsQuery } from './getItemsQuery'
 import { validateAddNewItem, addNewItemValidationRules, addNewItem } from './addNewItem'
@@ -7,7 +7,7 @@ import { validateDeleteItem, deleteItemValidationRules, deleteItem } from './del
 import { validatePostBidOrMessage, postBidOrMessageValidationRules, postBidOrMessage } from './postBidOrMessage'
 import { validateSaveItemForUser, saveItemForUserValidationRules, saveItemForUser } from './saveItemForUser'
 
-const itemRouter = express.Router()
+const itemRouter = Router()
 
 itemRouter.get('/item/:itemId', getSpecificItemValidationRules, validateGetSpecificItem, getSpecificItem)
 // @ts-ignore
